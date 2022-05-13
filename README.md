@@ -68,7 +68,7 @@ sequenceDiagram
 
 ### Class diagram
 
-```mermiad
+```mermaid
 classDiagram
     Animal <|-- Duck
     Animal <|-- Fish

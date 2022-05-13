@@ -126,15 +126,3 @@ solid cube_corner
   endfacet
 endsolid
 ```
-
-```stl
-norm[a_] := Sqrt[a.a];
-ePot[{x_, y_}, {px_, py_, q_}] := q/norm[{x, y} - {px, py}];
-Plot3D[Dipole1[x, y], {x, -3, 3}, {y, -3, 3}, Mesh -> 17,
- ImageSize -> 1500, PlotPoints -> 150, Lighting -> "Neutral",
- Boxed -> False, Axes -> False,
- PlotTheme -> {"FilledSurface", "ZMesh"},
- ColorFunction -> "TemperatureMap", MeshStyle -> Thickness[0.002],
- PerformanceGoal -> "Quality",
- Background -> RGBColor[0.95, 0.95, 0.95]]
-```
